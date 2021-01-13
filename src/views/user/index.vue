@@ -10,14 +10,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
-.user-wrap{
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  z-index: 101;
-  background-color: #34393f;
-  width: 410px;
+<style lang="less">
+#user-wrap{
 }
 </style>

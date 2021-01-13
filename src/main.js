@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 // 加载全局样式
-import '@/styles/main.css'
+import '@/styles/main.less'
 
 // 加载高德地图
 import '@/plugin/amap'
