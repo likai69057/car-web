@@ -1,0 +1,112 @@
+.car-item{
+  width: 420px;
+  height: 200px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 15px 15px 0px;
+  background-color: #fff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 0 18px 0 rgb(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 18px 0 rgb(0, 0, 0, .2);
+  -ms-box-shadow: 0 0 18px 0 rgb(0, 0, 0, .2);
+  -o-box-shadow: 0 0 18px 0 rgb(0, 0, 0, .2);
+  box-shadow: 0 0 8px 0 rgb(0, 0, 0, .2);
+  header{
+    display: flex;
+    h4, p{
+      flex: 1;
+      margin: 0 0;
+    }
+  }
+}
+.car-logo{
+  img{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .name{
+    font-size: 16px;
+  }
+}
+.car-attr{
+  text-align: right;
+  opacity: .5;
+  line-height: 30px;
+  font-size: 15px;
+  text-align: right;
+  padding-right: 40px;
+}
+.car-content{
+  display: flex;
+  margin: 6px 0px 7px 10px;
+  .car-info{
+    flex: 1;
+  }
+  img{
+    height: 100px;
+    padding: 0px 40px;
+  }
+  .car-number{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+  }
+  .car-electric{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    li{
+      width: 7px;
+      height: 24px;
+      border-radius: 100px;
+      background-color: #e1e1e1;
+      margin-right: 3px;
+      list-style: none;
+      display: inline-block;
+    }
+    li.active{
+      background: -webkit-linear-gradient(#17a8fa, #108dd9);
+      background: -moz-linear-gradient(#17a8fa, #108dd9);
+      background: -ms-linear-gradient(#17a8fa, #108dd9);
+      background: -o-linear-gradient(#17a8fa, #108dd9);
+      background: linear-gradient(#17a8fa, #108dd9);
+    }
+  }
+  .distance{
+    display: inline-block;
+    margin-left: 5px;
+    strong{
+      font-size: 22px;
+      margin: 0px 5px;
+    }
+    sub{
+      position: relative;
+      top: -3px;
+    }
+    sub:first-child{
+      opacity: .7;
+    }
+  }
+}
+.parking {
+  text-decoration: none;
+  display: block;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 10px;
+  color: black;
+  opacity: .7;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+    margin-top: 5px;
+  }
+}

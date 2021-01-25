@@ -2,7 +2,7 @@
 import Vue from 'vue'
 
 import VueAMap from 'vue-amap'
-Vue.use(VueAMap);
+Vue.use(VueAMap)
 VueAMap.initAMapApiLoader({
   key: '5e9550f484aaf3b12e8338d1fbbc4f23',
   // 插件引入
