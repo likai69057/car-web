@@ -1,18 +1,23 @@
 <template>
   <div class="car-wrap">
-    <swiper class="swiper" :options="swiperOption">
-      <swiper-slide>
-        <car-item />
-      </swiper-slide>
-      <swiper-slide>
-        <car-item />
-      </swiper-slide>
-      <swiper-slide>
-        <car-item />
-      </swiper-slide>
+    <div class="car-swiper-wrap">
+      <swiper class="swiper" :options="swiperOption">
+        <swiper-slide>
+          <car-item />
+        </swiper-slide>
+        <swiper-slide>
+          <car-item />
+        </swiper-slide>
+        <swiper-slide>
+          <car-item />
+        </swiper-slide>
+        <swiper-slide>
+          <car-item />
+        </swiper-slide>
+      </swiper>
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
-    </swiper>
+    </div>
     <button @click="onUser">汽车列表</button>
   </div>
 </template>
@@ -33,7 +38,11 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 3,
-        spaceBetween: -100
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
       }
     }
   },
@@ -55,7 +64,18 @@ export default {
   right: 0px;
   z-index: 11;
 }
+.car-swiper-wrap{
+  //padding: 0px 50px;
+  //.swiper-button-next,
+  //.swiper-button-prev{
+  //  width: 60px;
+  //  height: 100px;
+  //  border-radius: 100px;
+  //  background-color: #fff;
+  //  box-shadow: 0 0 18px 0 rgb(0, 0, 0, .2);
+  //}
+}
 .swiper{
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 </style>
