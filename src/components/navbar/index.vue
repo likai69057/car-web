@@ -1,13 +1,13 @@
 <template>
   <div class="nav-bar">
     <ul>
-      <li><i class="iconfont icon-wenhao"></i></li>
-      <li><i class="iconfont icon-sousuo"></i></li>
+      <li><i class="iconfont icon-w-44 icon-wenhao"></i></li>
+      <li><i class="iconfont icon-w-44 icon-sousuo"></i></li>
       <li>
         <a href="javascript: void(0)" class="select-car-btn">选择车辆</a>
       </li>
-      <li><i class="iconfont icon-dingwei"></i></li>
-      <li><i class="iconfont icon-gerenzhongxin" @click="$router.push('user')"></i></li>
+      <li><i class="iconfont icon-w-44 icon-dingwei"></i></li>
+      <li><i class="iconfont icon-w-44 icon-gerenzhongxin" @click="$router.push('user')"></i></li>
     </ul>
   </div>
 </template>
