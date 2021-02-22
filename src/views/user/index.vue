@@ -1,6 +1,5 @@
 <template>
   <div class="user-wrap">
-    会员
   </div>
 </template>
 
@@ -10,7 +9,6 @@ export default {
 }
 </script>
 
-<style lang="less">
-#user-wrap{
-}
+<style lang="less" scoped>
+@import "index.less";
 </style>

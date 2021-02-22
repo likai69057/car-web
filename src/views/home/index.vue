@@ -4,13 +4,13 @@
     <a-map />
     <!-- 地图 -->
     <!-- 汽车列表渲染 -->
-    <car />
+<!--    <car />-->
     <!-- 汽车列表渲染 -->
     <!-- 导航组件渲染 -->
     <navbar />
     <!-- 导航组件渲染 -->
     <!-- 会员 -->
-    <div class="children-view" :class="{'open': isUserShow}">
+    <div id="children-view" class="children-view" :class="{'open': isUserShow}">
       <router-view />
     </div>
     <!-- 会员 -->
@@ -19,14 +19,14 @@
 
 <script>
 import AMap from '@/views/amap/index.vue'
-import Car from '@/views/car/index.vue'
+// import Car from '@/views/car/index.vue'
 import Navbar from '@/components/navbar/index.vue'
 
 export default {
   name: 'home',
   components: {
     AMap,
-    Car,
+    // Car,
     Navbar
   },
   data () {
@@ -38,6 +38,14 @@ export default {
       const router = this.$route
       return router.name === 'User'
     }
+  },
+  mounted () {
+    document.addEventListener('mouseup', (e) => {
+      const userCon = document.getElementById('children-view')
+      if (userCon && !userCon.contains(e.target)) {
+        this.$router.push('/')
+      }
+    })
   }
 }
 </script>
