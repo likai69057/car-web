@@ -11,23 +11,23 @@
       </div>
     </div>
     <ul class="group-link">
-      <router-link to="aa" tag="a">
+      <router-link class="arrow" to="aa" tag="a">
         <i class="iconfont icon-wodezhanghu1"></i>
         我的账户
       </router-link>
-      <router-link to="aa" tag="a">
+      <router-link class="arrow" to="aa" tag="a">
         <i class="iconfont icon-fangxiangpan"></i>
         租车订单
       </router-link>
-      <router-link to="aa" tag="a">
+      <router-link class="arrow" to="aa" tag="a">
         <i class="iconfont icon-shimingrenzheng"></i>
         实名认证
       </router-link>
-      <router-link to="aa" tag="a">
+      <router-link class="arrow" to="/safe" tag="a">
         <i class="iconfont icon-anquanshezhi"></i>
         安全设置
       </router-link>
-      <router-link to="aa" tag="a">
+      <router-link class="arrow" to="aa" tag="a">
         <i class="iconfont icon-bangzhuzhongxin"></i>
         帮助中心
       </router-link>

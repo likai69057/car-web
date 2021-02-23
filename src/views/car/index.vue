@@ -25,7 +25,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
-import CarItem from '@/components/carlist/index.vue'
+import CarItem from '@/components/carlist/back.vue'
 
 export default {
   name: 'Car',

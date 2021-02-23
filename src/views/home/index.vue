@@ -36,7 +36,7 @@ export default {
   computed: {
     isUserShow () {
       const router = this.$route
-      return router.name === 'User'
+      return router.name !== 'Home'
     }
   },
   mounted () {

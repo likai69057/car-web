@@ -21,6 +21,31 @@ const routes = [
         path: '/user',
         name: 'User',
         component: () => import('@/views/user')
+      },
+      {
+        path: '/safe',
+        name: 'Safe',
+        component: () => import('@/views/safe')
+      },
+      {
+        path: '/password',
+        name: 'Password',
+        component: () => import('@/views/safe/password')
+      },
+      {
+        path: '/capitalpassword',
+        name: 'CapitalPassword',
+        component: () => import('@/views/safe/capitalpassword')
+      },
+      {
+        path: '/mobile',
+        name: 'Mobile',
+        component: () => import('@/views/safe/mobile')
+      },
+      {
+        path: '/card',
+        name: 'Card',
+        component: () => import('@/views/safe/card')
       }
     ]
   }
